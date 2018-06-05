@@ -1,5 +1,44 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-TODO INDEX
+<div class="container">
+	<br>
+	<h2 class="page-header">Lates Todos</h2>
+	<div class="row">
+		<div class="col-md-12">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">Todo</th>
+						<th scope="col">Date</th>
+						<th scope="col">Action</th>
+					</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+					<td>1</td>
+					<td>Name1</td>
+					<td>2018</td>
+					<td>
+						<a href="/symfony-todolist/web/app_dev.php/todo/details/1" class="btn btn-success btn-sm">Details</a>
+						<a href="/symfony-todolist/web/app_dev.php/todo/edit/1" class="btn btn-primary btn-sm">Edit</a>
+						<a href="/symfony-todolist/web/app_dev.php/todo/delete/1" class="btn btn-danger btn-sm">Delete</a>
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Name2</td>
+					<td>2018</td>
+					<td>
+						<a href="/symfony-todolist/web/app_dev.php/todo/details/1" class="btn btn-success btn-sm">Details</a> 
+						<a href="/symfony-todolist/web/app_dev.php/todo/edit/1" class="btn btn-primary btn-sm">Edit</a>
+						<a href="/symfony-todolist/web/app_dev.php/todo/delete/1" class="btn btn-danger btn-sm">Delete</a>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
 {% endblock %}
