@@ -1,5 +1,17 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-DETAIL
+<div class="jumbotron">
+	<h1 class="display-3">{{todo.name}}</h1>
+	<p class="lead">{{todo.description}}</p>
+	<hr class="my-4">
+	<p><b>Priority:</b> {{todo.priority}}</p>
+	<p><b>Category:</b> {{todo.category}}</p>
+	<p><b>Due Date:</b> {{todo.dueDate|date('F j')}}</p>
+	<p class="lead">
+		<a class="btn btn-danger btn-lg" href="/symfony-todolist/web/app_dev.php/todo/delete/{{todo.id}}" role="button">Delete</a>
+	</p>
+</div>
 {% endblock %}
+
+
