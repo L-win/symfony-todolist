@@ -21,8 +21,8 @@
 					<td>{{todo.dueDate|date('F j, Y')}}</td>
 					<td>
 						<a href="/symfony-todolist/web/app_dev.php/todo/details/{{todo.id}}" class="btn btn-success btn-sm">Details</a>
-						<a href="/symfony-todolist/web/app_dev.php/todo/edit/{{todo.id}}" class="btn btn-primary btn-sm">Edit</a>
 						<a href="/symfony-todolist/web/app_dev.php/todo/delete/{{todo.id}}" class="btn btn-danger btn-sm">Delete</a>
+						<a href="/symfony-todolist/web/app_dev.php/todo/edit/{{todo.id}}" class="btn disabled" >Edit</a>
 					</td>
 				</tr>
 				{% endfor %}

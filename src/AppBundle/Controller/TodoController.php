@@ -90,11 +90,11 @@ class TodoController extends Controller
 	 */	
 	public function deleteAction($id)
 	{
-		// $em = $this->getDoctrine()->getManager();
-		// $todo = $em->getRepository('AppBundle:Todo')->find($id);
+		$em = $this->getDoctrine()->getManager();
+		$todo = $em->getRepository('AppBundle:Todo')->find($id);
 		
-		// $em->remove($todo);
-		// $em->flush();
+		$em->remove($todo);
+		$em->flush();
 		
 		$this->addFlash('notice','Todo Removed');
 		
